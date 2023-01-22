@@ -32,9 +32,13 @@ ${data.contribute}
 ${data.tests}
 
 ## Questions
-Visit my profile: [${data.githubID}](${data.githubURL})
+Visit my GitHub profile: [${data.githubID}](${data.githubURL})
 
 If you have any questions or feedback for this app, please click [here](${data.email}) to contact me.
+
+---
+
+© 2023 ${data.githubID}. All rights reserved.
 `;
 }
 
