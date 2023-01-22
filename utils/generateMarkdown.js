@@ -23,7 +23,7 @@ ${data.install}
 ${data.usage}
 
 ## Licence
-${data.license}
+This project is licensed under the terms of the ${data.license} license.
 
 ## Contributing
 ${data.contribute}
