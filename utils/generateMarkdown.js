@@ -7,8 +7,10 @@ function generateMarkdown(data) {
 
 ${getBadge('LicenseType', data.license, data.licenseColor)}
  
+
 ## Description
  ${data.description}
+
 
 ## Table of Contents
 * [Installation](#installation)
@@ -18,20 +20,26 @@ ${getBadge('LicenseType', data.license, data.licenseColor)}
 * [Tests](#tests)
 * [Questions](#questions)
 
+
 ## Installation
 ${data.install}
+
 
 ## Usage
 ${data.usage}
 
-## Licence
+
+## License
 This project is licensed under the terms of the ${data.license} license.
+
 
 ## Contributing
 ${data.contribute}
 
+
 ## Tests
 ${data.tests}
+
 
 ## Questions
 Visit my GitHub profile: [${data.githubID}](${data.githubURL})

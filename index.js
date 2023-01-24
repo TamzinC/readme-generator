@@ -22,13 +22,13 @@ const questions = [
     {
         name: 'usage',
         message: 'What are the instuctions to use the app?',
-        type: 'input'
+        type: 'editor'
     },
     {
         name: 'license',
         message: 'What licence do you require?',
         type: 'list',
-        choices: ['MIT', 'Apache-2.0', 'GPL-3.0', 'BSD-2-Clause "Simplified"', 'BSD-3-Clause "New" or "Revised"', 'Boost Software License-1.0', 'Creative Commons Zero-1.0 Universal', 'Eclipse-2.0', 'Affero GPL-3.0', 'GPL-2.0', 'Lesser GPL-2.1', 'Mozilla-2.0', 'The Unlicense']
+        choices: ['Apache-2.0', 'GPL-3.0', 'MIT', 'BSD-2-Clause "Simplified"', 'BSD-3-Clause "New" or "Revised"', 'Boost Software License-1.0', 'Creative Commons Zero-1.0 Universal', 'Eclipse-2.0', 'Affero GPL-3.0', 'GPL-2.0', 'Lesser GPL-2.1', 'Mozilla-2.0', 'The Unlicense']
     },
     {
         name: 'licenseColor',
@@ -70,7 +70,7 @@ function writeToFile(projectTitle, data) {
         if (error) {
             return console.log(error);
         } else{
-            console.log(`-------You have successfully created your README file for ${projectTitle}!-------`);
+            console.log(`-------You have successfully created your README file for: ${projectTitle}!-------`);
         }
     });
 };
