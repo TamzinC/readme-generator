@@ -5,6 +5,8 @@ function generateMarkdown(data) {
 
 ---
 
+${getBadge('LicenseType', data.license, data.licenseColor)}
+ 
 ## Description
  ${data.description}
 
@@ -41,5 +43,9 @@ If you have any questions or feedback for this app, please click [here](${data.e
 © 2023 ${data.githubID}. All rights reserved.
 `;
 }
+
+function getBadge(badgeType, message, color) {
+  return `![${badgeType}](https://img.shields.io/static/v1?label=${badgeType}&message=${encodeURIComponent(message)}&color=${color})`
+};
 
 module.exports = generateMarkdown;

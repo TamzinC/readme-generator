@@ -31,6 +31,12 @@ const questions = [
         choices: ['MIT', 'Apache-2.0', 'GPL-3.0', 'BSD-2-Clause "Simplified"', 'BSD-3-Clause "New" or "Revised"', 'Boost Software License-1.0', 'Creative Commons Zero-1.0 Universal', 'Eclipse-2.0', 'Affero GPL-3.0', 'GPL-2.0', 'Lesser GPL-2.1', 'Mozilla-2.0', 'The Unlicense']
     },
     {
+        name: 'licenseColor',
+        message: 'What colour would you like to add to your license badge:',
+        type: 'list',
+        choices: ['brightgreen', 'green', 'yellowgreen', 'yellow', 'orange', 'red', 'blue', 'lightgrey', 'blueviolet']
+    },
+    {
         name: 'contribute',
         message: 'Please explain any guidelines for other devlopers if you are open to contributions on your project:',
         type: 'input'
